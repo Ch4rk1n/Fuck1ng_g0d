@@ -1,0 +1,36 @@
+name = list(range(10))
+email = list(range(10))
+cod = list(range(10))
+lista = list(range(10))
+for x in range(10):
+
+    name[x] = input("Digite seu nome: ")
+    email[x] = input("Digite seu email: ")
+    cod [x] = x+77506
+
+
+print("1 - Listar todos")
+print("2 - Listar cod")
+print("3 - Excluir um usuario")
+
+opc = int(input("Digite sua opção: "))
+
+if (opc==1):
+    print("Nomes: ",name)
+    print("Email: ",email)
+
+
+elif (opc==2):
+    print("Códigos: ",cod)
+    print("Nomes",name)
+
+
+elif (opc==3):
+    cod.remove(77510)
+    print("",cod)
+
+
+else: 
+    print("Error 404")
+    
+print("Feito por: Ch4rk1n (João Pedro")
