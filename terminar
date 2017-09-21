@@ -1,0 +1,49 @@
+from tkinter import *
+root=Tk()
+
+class novo:
+        def __init__(self, janela):
+
+            self.caixa=Frame(janela)
+            self.caixa.grid()
+
+            self.l1 = Label(janela, text='Usuário: ')
+            self.l1.grid()
+            self.ed = Entry()
+            self.ed.grid()
+            self.l2 = Label(janela, text='Senha: ')
+            self.l2.grid()
+            self.ed2 = Entry()
+            self.ed2.grid()
+            self.b=Button(janela, text='Criar Conta', command=self.cadastro)
+            self.b.grid()
+            self.b2 = Button(janela, text='Logar', command=self.cadastro)
+            self.b2.grid()
+
+        def cadastro(self):
+            self.jan=Toplevel()
+            self.l=Label(self.jan, text='Digite seus dados para cadastrar!')
+            self.l.grid()
+            self.l1=Label(self,jan, text = 'nome')
+            self.l1.grid()
+            b3=Button(self.jan, text='Voltar', command=self.fecha_jan)
+            b3.grid()
+            self.jan.geometry('300x200')
+            self.jan.transient(root)#
+            self.jan.focus_force()#
+            self.jan.grab_set()#
+
+        def cadastrar(self):
+            self.jan=TopLevel()
+            self.Label(self.jan, text='Nome')
+
+
+
+
+            ##Função que destroi a janela atual...
+        def fecha_jan(self):
+            self.jan.destroy()
+
+novo(root)
+root.geometry('300x200')
+root.mainloop()
